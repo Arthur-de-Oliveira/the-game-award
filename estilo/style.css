@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor1: #4A47FF;
+    --cor2: #2E2BF0;
+    --cor3: #100DA3;
+    --cor4: #dfd880;
+    --cor5: #F0CF32;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-jogos: 'Acme', sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+nav {
+    background-image: linear-gradient(10deg, var(--cor3), var(--cor1));
+    padding: 15px;
+    height: 20px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+    font-family: var(--font-especial);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-family: var(--fonte-padrao);
+}
+
+nav > a:hover {
+    border-radius: 10px;
+    transition: .3s;
+    color: var(--cor5);
+    text-decoration: underline;
+    background-color: var(--cor3);
+}
+
+header {
+    height: 150px;
+    padding: 15px;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+    color: white;
+    background-image: linear-gradient(10deg, var(--cor3), var(--cor1));
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.350);
+}
+
+header > h1 {
+    margin: 10px;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 300;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    line-height: 1.5em;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.350);
+}
+
+main h1 {
+    padding: 20px 20px 10px 20px;
+    font-size: 2.6em;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+main h2 {
+    
+    padding: 40px 0px 10px 0px;
+    font-size: 2.4em;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+main h3 {
+    margin: 20px 0px 1px 0px;
+    padding: 7px;
+    font-weight: normal;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: var(--fonte-jogos);
+}
+
+main p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+}
+
+main a {
+    color: var(--cor2);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+}
+
+main a::after {
+    content: "\00a0\1F517";
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img {
+    width: 100%;
+}
+
+.video {
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.400);
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--fonte-jogos);
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2));
+    color: white;
+    padding: 20px;
+    height: 15px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor5);
+    text-decoration: underline;
+}
