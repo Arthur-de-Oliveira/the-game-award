@@ -210,9 +210,11 @@ footer a:hover {
         font-size: .8em;
     }
     main {
-        padding: 10px;
         margin-bottom: 0px;
         border-radius: 0px;
+    }
+    main article {
+        margin: -10px;
     }
     main a::after {
         content: none
