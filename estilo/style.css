@@ -17,6 +17,7 @@
 }
 
 * {
+    
     padding: 0px;
     margin: 0px;
 }
@@ -49,7 +50,6 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
-    width: 100px;
     padding: 18px 10px;
     font-family: var(--fonte-padrao);
 }
@@ -61,20 +61,27 @@ nav a:hover {
 }
 
 header {
-    color: white;
     background-image: linear-gradient(10deg, var(--cor3), var(--cor1));
-    height: 150px;
-    padding: 70px 15px 15px 15px;
-    text-align: center;
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    color: white;
     font-family: var(--fonte-destaque);
-    font-size: 1.7em;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0,.400);
     box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
-header > h1 {
-    margin: 10px;
-    font-size: 2em;
+#titulo {
+    width: 95%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7em;
+}
+
+#titulo h1 {
     font-weight: normal;
 }
 
@@ -119,7 +126,7 @@ main h3 {
 
 main p {
     padding: 10px;
-    text-align: justify;
+    text-align: left;
     text-indent: 30px;
     font-size: 1.1em;
 }
@@ -178,3 +185,46 @@ footer a:hover {
     color: var(--cor5);
     text-decoration: underline;
 }
+
+@media only screen and (max-width : 470px)
+{ 
+    nav {
+        padding: 10px;
+    }
+    nav li {
+        font-size: 0.9em;
+    }
+    nav a {
+        padding: 5px;
+    }
+    header {
+        height: 140px;
+    }
+    #titulo {
+        top: 60%;
+    }
+    #titulo h1 {
+        font-size: 1.4em;
+    }
+    #titulo p {
+        font-size: .8em;
+    }
+    main {
+        padding: 10px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    main a::after {
+        content: none
+    }
+    main p {
+        font-size: 1em;
+    }
+    main h1 {
+        text-align: center;
+        font-size: 2.2em;
+    }
+    main h2 {
+        font-size: 1.9em;
+    }
+ }
