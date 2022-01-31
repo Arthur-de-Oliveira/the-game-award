@@ -37,18 +37,26 @@ nav {
     font-family: var(--font-especial);
 }
 
-nav > a {
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
     color: white;
     text-decoration: none;
-    padding: 8px;
+    width: 100px;
+    padding: 18px 10px;
     font-family: var(--fonte-padrao);
 }
 
-nav > a:hover {
-    border-radius: 10px;
+nav a:hover {
     transition: .3s;
     color: var(--cor5);
-    text-decoration: underline;
     background-color: var(--cor3);
 }
 
